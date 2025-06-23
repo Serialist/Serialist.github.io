@@ -1,12 +1,55 @@
-<html>
-  <head>
-    <title>Serialist here!</title>
-  </head>
-  <body>
-    <h1>Serialist Blog here!</h1>
-    Hello world!<br>
-    Goodbye world.<br><br>
-    Happy birthday to me!<br>
-    On 2025.6.21 .
-  </body>
+<!DOCTYPE html>
+<html lang="zh-CN" class="mdui-theme-auto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib//mdui_icon.css">
+    <link rel="stylesheet" href="./lib/mdui.css">
+    <link rel="stylesheet" href="global.css">
+    <script src="./lib/mdui.global.js"></script>
+    <title>Serialist's</title>
+</head>
+
+<body>
+    <app id="app">
+        <mdui-layout>
+            <mdui-top-app-bar class="appbar" scroll-behavior="elevate" scroll-target="#app" variant="small" order="12">
+                <mdui-button-icon icon="menu" id="menu_button"></mdui-button-icon>
+                <mdui-top-app-bar-title><a href="./">Serialist's</a></mdui-top-app-bar-title>
+            </mdui-top-app-bar>
+            <mdui-navigation-drawer modal close-on-esc close-on-overlay-click order="11">
+                <mdui-list>
+                    <mdui-list-item href="./" icon="home">Home</mdui-list-item>
+                    <mdui-list-item href="./about.html" icon="info">About</mdui-list-item>
+                    <mdui-list-item href="./blog/" icon="article">Blog</mdui-list-item>
+                    <mdui-list-item href="./projects/" icon="build">Projects</mdui-list-item>
+                    <mdui-list-item href="./links/" icon="link">Links</mdui-list-item>
+                    <mdui-list-item href="./contact.html" icon="contact_mail">Contact</mdui-list-item>
+                </mdui-list>
+            </mdui-navigation-drawer>
+            <!--
+        <mdui-navigation-rail divider>
+            <mdui-navigation-rail-item icon="watch_later">Recent</mdui-navigation-rail-item>
+            <mdui-navigation-rail-item icon="image">Images</mdui-navigation-rail-item>
+            <mdui-navigation-rail-item icon="library_music">Library</mdui-navigation-rail-item>
+        </mdui-navigation-rail>
+    -->
+            <mdui-layout-main>
+                <p>test start!</p>
+                <p id="test"></p>
+                <script>
+                    var test_text = "";
+                    for (var i = 0; i < 100; i++)
+                        test_text += i + "<br>";
+                    document.getElementById("test").innerHTML = test_text;
+                </script>
+            </mdui-layout-main>
+
+        </mdui-layout>
+
+        <script src="./global.js"></script>
+
+</body>
+
 </html>
