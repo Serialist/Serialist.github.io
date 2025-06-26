@@ -25,16 +25,9 @@
 
             <mdui-top-app-bar scroll-behavior="elevate" variant="small">
                 <mdui-button-icon icon="menu" id="menu_button"></mdui-button-icon>
-                <!--<mdui-top-app-bar-title><a href="https://www.serialist.top">Serialist's</a></mdui-top-app-bar-title>-->
                 <mdui-top-app-bar-title><a href="/">Serialist's</a></mdui-top-app-bar-title>
+                <mdui-button href="/page/templete.html">templete</mdui-button>
             </mdui-top-app-bar>
-
-            <mdui-layout-item placement="bottom">
-                <div id="footer">
-                    Serialist's ba3pt@chd.edu.cn<br>
-                    ©2025 By Serialist | <a href="https://icp.gov.moe/?keyword=20254044">萌ICP备20254044号</a><br>
-                </div>
-            </mdui-layout-item>
 
             <mdui-navigation-drawer close-on-esc close-on-overlay-click placement="left">
                 <mdui-list>
@@ -46,23 +39,18 @@
                 </mdui-list>
             </mdui-navigation-drawer>
 
-            <!--
-        <mdui-navigation-rail divider>
-            <mdui-navigation-rail-item icon="watch_later">Recent</mdui-navigation-rail-item>
-            <mdui-navigation-rail-item icon="image">Images</mdui-navigation-rail-item>
-            <mdui-navigation-rail-item icon="library_music">Library</mdui-navigation-rail-item>
-        </mdui-navigation-rail>
-    -->
-            <mdui-layout-main placement="">
-                <div id="content">
-                    <p>test start!</p>
-                    <p id="test"></p>
-                    <script>
-                        var test_text = "";
-                        for (var i = 0; i < 100; i++)
-                            test_text += i + "<br>";
-                        document.getElementById("test").innerHTML = test_text;
-                    </script>
+            <mdui-layout-item placement="bottom">
+                <div id="footer">
+                    ©2025 By Serialist<br>
+                    <a href="mailto:ba3pt@chd.edu.cn">Email: ba3pt@chd.edu.cn</a><br>
+                    <a href="https://icp.gov.moe/?keyword=20254044">萌ICP备20254044号</a><br>
+                </div>
+            </mdui-layout-item>
+
+            <mdui-layout-main>
+                <div class="content">
+                    <h1>My Blog:</h1>
+                    <mdui-list id="blog_list"></mdui-list>
                 </div>
             </mdui-layout-main>
 
@@ -82,7 +70,6 @@
     </div>
 
     <script src="/src/lib/mdui/mdui.global.js"></script>
-    <script src="/src/lib/markdown/marked.min.js"></script>
     <script src="/src/js/public/global.js"></script>
 
 </body>
