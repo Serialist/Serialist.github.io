@@ -1,2 +1,5 @@
-# Serialist.github.io
-my website
+# MY SITE
+
+Thanks!
+
+BY GitHub Pages.

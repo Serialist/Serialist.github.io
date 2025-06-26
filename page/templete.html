@@ -45,18 +45,19 @@
                     ©2025 By Serialist<br>
                     <a href="mailto:ba3pt@chd.edu.cn">Email: ba3pt@chd.edu.cn</a><br>
                     <a href="https://icp.gov.moe/?keyword=20254044">萌ICP备20254044号</a><br>
-
                 </div>
             </mdui-layout-item>
 
             <mdui-layout-main placement="">
                 <div class="content">
-                    <h1>Serialist's here</h1><br>
-                    <span>
-                        一些博客、学习笔记和乱七八糟的文字<br>
-                        谢谢。<br>
-                    </span>
-
+                    <p>test start!</p>
+                    <p id="test"></p>
+                    <script>
+                        var test_text = "";
+                        for (var i = 0; i < 100; i++)
+                            test_text += i + "<br>";
+                        document.getElementById("test").innerHTML = test_text;
+                    </script>
                 </div>
             </mdui-layout-main>
 
